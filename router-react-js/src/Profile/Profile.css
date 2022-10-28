@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile-flex h1{
+    font-size: 30px;
+    margin-left: 20px;
+}
+button{
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+}
