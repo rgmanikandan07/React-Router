@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './Home/Home';
 import Profile from './Profile/Profile';
+import Product from './Product/Product';
 import About from './About/About';
 
 import { BrowserRouter,Routes,Route,Navigate } from 'react-router-dom';
@@ -13,7 +14,8 @@ function RoutesComponent (){
   return <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />}></Route>
-              <Route path="Profile" element={<Profile />}></Route>
+              <Route path="Profile/:id" element={<Profile />}></Route>
+              <Route path="Product" element={<Product />}></Route>
               <Route path="About" element={<About />}></Route>
               <Route path="*" element={<Navigate to ="/"/>}></Route>
             </Routes>
